@@ -1,0 +1,9 @@
+---
+- name: Create a File
+  hosts: all
+  become: true
+  tasks:
+    - name: Create a file
+      file:
+        path: /home/ubuntu/test.txt
+        state: touch

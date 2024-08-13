@@ -1,0 +1,11 @@
+---
+- name: Create a User
+  hosts: all
+  become: true
+  tasks:
+    - name: Create user s74n13y
+      user:
+        name: s74n13y
+        state: present
+        comment: "User s74n13y"
+        shell: /bin/bash
